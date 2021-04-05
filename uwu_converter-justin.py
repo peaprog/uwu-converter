@@ -15,7 +15,6 @@ def uwu_converter():
         else:
             translation = translation + letter
     return str(translation)
-
 while True:
     try:
         print("-----------------------------")
