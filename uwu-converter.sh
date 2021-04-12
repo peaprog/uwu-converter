@@ -1,1 +1,1 @@
-python3 ./uwu_converter.py
+python3 ./uwu-converter/uwu_converter.py
