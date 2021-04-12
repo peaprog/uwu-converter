@@ -1,18 +1,18 @@
-print("""-------------------------------------------
-Welcome to uwu converter!
-""")
-normal = input("Please enter text to be UWUfied: ")
 
 
-def uwu_converter(phrase):
+
+def uwu_converter():
     translation = ""
+    print("""-------------------------------------------
+    Welcome to uwu converter!
+    """)
+    phrase = input("Please enter text to be UWUfied: ")
     for letter in phrase:
         if letter.lower() in "aeio":
             if letter.isupper():
                 translation = translation + "Owo"
             else:
                 translation = translation + "owo"
-
         elif letter.lower() in "u":
             if letter.isupper():
                 translation = translation + "Uwu"
@@ -23,5 +23,9 @@ def uwu_converter(phrase):
             
     print(translation)
 
+while True:
+    try:
+        uwu_converter()
+    except:
+        print("What are you even doing")
 
-uwu_converter(normal)
