@@ -1,12 +1,13 @@
-
+print("""-------------------------------------------
+    Welcome to uwu converter!
+    """)
 
 
 def uwu_converter():
     translation = ""
-    print("""-------------------------------------------
-    Welcome to uwu converter!
-    """)
-    phrase = input("Please enter text to be UWUfied: ")
+    
+    phrase = input("\nPlease enter text to be UWUfied: ")
+
     for letter in phrase:
         if letter.lower() in "aeio":
             if letter.isupper():
@@ -22,10 +23,11 @@ def uwu_converter():
             translation = translation + letter
             
     print(translation)
+    return(phrase)
+
 
 while True:
-    try:
-        uwu_converter()
-    except:
-        print("What are you even doing")
-
+    uwu_converter()
+    answer = input("\n-------------------------------------------\nContinue? (y/n): ")
+    if answer.lower() == 'n':
+        break
