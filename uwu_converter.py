@@ -30,4 +30,5 @@ while True:
     uwu_converter()
     answer = input("\n-------------------------------------------\nContinue? (y/n): ")
     if answer.lower() == 'n':
+        print("Thanks for using uwu converter!")
         break
